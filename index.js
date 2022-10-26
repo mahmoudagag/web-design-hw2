@@ -216,7 +216,7 @@ async function solve(str){
     console.log(str)
     isOpen = 0
     console.log(str)
-    url = `http://api.mathjs.org/v4/?expr=${str}&precision=6`
+    url = `https://api.mathjs.org/v4/?expr=${str}&precision=6`
     await fetch(url)
     .then(res => res.json())
     .then(data => {console.log(data)
